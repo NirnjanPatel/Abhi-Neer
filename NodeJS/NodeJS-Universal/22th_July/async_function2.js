@@ -3,14 +3,13 @@
 
 console.log("Before function execution");
 
-function demo()
-{
- console.log("Demo function invoked");
+function demo() {
+    console.log("Demo function invoked");
 }
 
-var t=setTimeout(demo,3000);
-var flag=false;
-if(flag==false)
- clearTimeout(t); 
- 
+var t = setTimeout(demo, 3000);
+var flag = false;
+if (flag == false)
+    clearTimeout(t);
+
 console.log("After function execution");

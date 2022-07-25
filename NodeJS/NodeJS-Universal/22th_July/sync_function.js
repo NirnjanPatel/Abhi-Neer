@@ -2,9 +2,8 @@
 
 console.log("Before function execution");
 
-function demo()
-{
- console.log("Demo function invoked");
+function demo() {
+    console.log("Demo function invoked");
 }
 
 demo();
