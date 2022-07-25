@@ -7,7 +7,7 @@ function demo() {
     console.log("Demo function invoked");
 }
 
-//demo();
+// demo();
 setTimeout(demo, 3000);
 
 console.log("After function execution");
