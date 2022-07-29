@@ -1,19 +1,19 @@
 // Function with his type 
 class Addition {
     setA(a) {
-
+        this.a = a;
     }
     setB(b) {
-
+        this.b = b;
     }
     addData() {
         this.c = this.a + this.b;
     }
 
     showData() {
-        console.log("a = " + a);
-        console.log("b = " + b);
-        console.log("c = " + c);
+        console.log("a = " + this.a);
+        console.log("b = " + this.b);
+        console.log("c = " + this.c);
     }
 }
 
