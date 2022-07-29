@@ -20,3 +20,5 @@ class Addition {
 var obj = new Addition();
 obj.setA(100);
 obj.setB(100);
+obj.addData();
+obj.showData();
