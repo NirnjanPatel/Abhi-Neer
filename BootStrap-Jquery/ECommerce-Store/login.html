@@ -1,0 +1,186 @@
+
+<html lang="en">
+
+<head>
+    
+    <title>Malakar cloth's shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+<script>
+        function validation() {
+            var flag = true;
+
+            var name = document.getElementById("name").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var mobile = document.getElementById("mobile").value;
+            var city = document.getElementById("city").value;
+
+            var error1 = document.getElementById("error1").value;
+            var error2 = document.getElementById("error2").value;
+            var error3 = document.getElementById("error3").value;
+            var error4 = document.getElementById("error4").value;
+            var error6 = document.getElementById("error6").value;
+        }
+
+        if (name.length == 0) {
+            error1.innerHTML = "*Name is required";
+            error1.style.color = "red";
+            flag = false;
+        }
+        else
+            error1.innerHTML = "";
+
+        if (username.length == 0) {
+            error2.innerHTML = "*UserName is required";
+            error2.style.color = "red";
+            flag = false;
+        }
+        else
+            error2.innerHTML = "";
+
+
+        if (password == "") {
+            error3.innerHTML = "*Password is required";
+            error3.style.color = "red";
+            flag = false;
+        }
+        else
+            error3.innerHTML = "";
+
+        if (mobile.length == 0) {
+            error4.innerHTML = "*Mobile number is required";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else if (isNaN(mobile)) {
+            error4.innerHTML = "*Mobilenumber must be numeric";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else if (mobile.length != 10) {
+            error4.innerHTML = "*Mobilenumber must be 10 digit";
+            error4.style.color = "red";
+            flag = false;
+        }
+        else
+            error4.innerHTML = "";
+
+
+        
+
+        if (city == 0) {
+            error6.innerHTML = "*City is required";
+            error6.style.color = "red";
+            flag = false;
+        }
+        else
+            error6.innerHTML = "";
+
+        return flag;
+    </script>
+<style>
+#from::before{ 
+    content: "";
+    position: absolute;
+    background: url('./images/login2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#from h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+</style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./images/logo.jpeg" alt="malakarclothshop.com">
+        </div>
+        <ul>
+            <li class="item"><a href="Pro.html" title="Home Page">Home</a></li>
+            <li class="item"><a href="service.html" title="Services page">Services</a></li>
+            <li class="item"><a href="client.html" title="Clients">Our Clients</a></li>
+            <li class="item"><a href="contact.html" title="Contact">Contact Us</a></li>
+            <li class="item"><a href="login.html" title="Contact">Login</a></li>
+        </ul>
+        </div>
+        </nav>
+        
+        
+        <div id="from">
+        <div class="box">
+            <center>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <lable><h1>Name</h1></lable>
+                        </td>
+                        <td><input type="text" id="name" onkeyup="return validation()" /></td>
+                        <td id="error1"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <lable><h1>UserName</h1></lable>
+                        </td>
+                        <td><input type="text" id="username" onkeyup="return validation()" /></td>
+                        <td id="error2"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable><h1>Password</h1></lable>
+                        </td>
+                        <td><input type="password" id="password" onkeyup="return validation()" /></td>
+                        <td id="error3"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable><h1>Mobile</h1></lable>
+                        </td>
+                        <td><input type="text" id="mobile;" onkeyup="return validation()" /></td>
+                        <td id="error4"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <lable><h1>City</h1></lable>
+                        </td>
+                        <td><select style="width:100%" id="city" onchange="return validation()">
+                                <option value="0">Select City</option>
+                                <option>Indore</option>
+                                <option>Bhopal</option>
+                                <option>Ujjain</option>
+                            </select></td>
+                        <td id="error6"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input  onclick="return validation()" type="submit" value="Register" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            </center>
+            </div>
+        </div>
+<br/><br/>
+       <footer>
+        <div class="center">
+            Copyright &copy; www.MalakarShop.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
+
