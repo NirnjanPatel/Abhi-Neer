@@ -16,5 +16,8 @@ to install : npm install <module_name>
 -> Level 3 : Global dependency , environmental dependency which is to be installed explicitly
 
 eg : @angular/cli , create-react-app , nodemon.....   
-to install : npm install <module_name> -g  
-
+to install : 
+1. npm install <module_name> -g // ES6  
+2. npm install <module_name> -global // Before ES6 
+2. npm install -global <module_name>  // Before ES6 
+2. npm install -g <module_name>  // Before ES6 
