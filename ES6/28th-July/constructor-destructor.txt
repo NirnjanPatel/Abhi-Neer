@@ -4,7 +4,7 @@ Constructor :-
 -> It is used to assign value to class parameters
 -> It will be auto invoked when object of class is created
 -> No need of explicit calling
--> It have fixed name in ES6
+-> It have fixed name in ES6 = constructor 
 
 constructor()
 {
