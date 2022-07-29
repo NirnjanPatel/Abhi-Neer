@@ -1,4 +1,6 @@
-Modules :- It is collection of variables , functions , prototype or classes , which can be linked at application level as required & can be removed if not required. Used to deploy code reusability & re-implementation.Modules can also be named as dependency or packages.
+Modules :- It is collection of variables , functions , prototype or classes , which can be linked at application level as required & can be removed if not required. 
+Used to deploy code reusability & re-implementation.
+* Modules can also be named as dependency or packages.
 
 Note : Depending on avaibility & linking modules are classified
 
