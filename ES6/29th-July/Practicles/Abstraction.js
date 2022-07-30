@@ -15,3 +15,5 @@ class eDetails {
 var obj = new eDetails();
 obj.setDetails("Mark Jukerburg", 4578939);
 obj.showDetails();
+
+// obj.#eName = 56; THis is private so this will not be accessable outside class
