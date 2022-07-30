@@ -1,4 +1,6 @@
-//encapsulation
+// encapsulation
+// Encapsulation is the bundling of "data and the methods" that act on that data such that access to that data is restricted from outside the bundle
+
 class Employee {
    setEmployee(eno, enm) {
       this.eno = eno;
